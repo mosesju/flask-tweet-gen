@@ -1,0 +1,39 @@
+{% extends "bootstrap/base.html" %}
+{% block title %}
+Data Science Project
+{% endblock %}
+{% block navbar %}
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <ul class="navbar-nav nav">
+                <li class="active">
+                    <a href="">Data Science Project</a>
+                </li>
+                <li>
+                    <a href="/tweetgenerate" class="">Text Generation</a>
+                </li>
+            </ul>
+        </div>
+        
+    </nav>
+{% endblock %}
+{% block content %}
+    <br>
+    <br>
+    <br>
+    <br>
+    <h1>
+        Welcome to my Data Science Project!
+    </h1>
+    <h2>Description</h2>
+    <p>This is my capstone project for my Master's degree in Data Science. 
+        It looks to use Natural Language Gneeration to create Sports Related
+        Tweets. In the NavBar click Text Generation to give it a whirl! Enter 
+        three sports related phrases, and then see what kind of whacky stuff it comes up with.
+    </p>
+    <h2>Technology</h2>
+    <p>The Project is built using Flask as a backend for this website & 
+        the Machine Learning is done using the Python Deep Learning Library Keras.
+        The website is hosted on PythonAnywhere.
+    </p>
+{% endblock %}

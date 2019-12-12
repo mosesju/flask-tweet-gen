@@ -1,0 +1,31 @@
+{% extends 'bootstrap/base.html' %}
+{% import 'bootstrap/wtf.html' as wtf %}
+{% block navbar %}
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <ul class="navbar-nav nav">
+                <li>
+                    <a href="/">Data Science Project</a>
+                </li>
+                <li class="active">
+                    <a href="/tweetgenerate" class="">Text Generation</a>
+                </li>
+            </ul>
+        </div>
+        
+    </nav>
+{% endblock %}
+{% block content %}
+    <br>
+    <br>
+    <br>
+    <br>
+    <h1>Generate Tweets</h1>
+    <form action="" method="POST" novalidate>
+        <div class="container">
+            <dl>
+                {{ wtf.quick_form(form)}}
+            </dl>
+        </div>
+    </form>
+{% endblock %}

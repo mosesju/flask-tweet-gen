@@ -1,0 +1,27 @@
+{% extends 'bootstrap/base.html' %}
+{% import 'bootstrap/wtf.html' as wtf %}
+{% block navbar %}
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <ul class="navbar-nav nav">
+                <li>
+                    <a href="/">Data Science Project</a>
+                </li>
+                <li>
+                    <a href="/tweetgenerate" class="">Text Generation</a>
+                </li>
+            </ul>
+        </div>
+        
+    </nav>
+{% endblock %}
+{% block content %}
+<br>
+<br>
+<br>
+<br>
+<h1>Your Tweets</h1>
+{% for i in tweets %}
+    <h2>Generated Tweet: {{ i }}</h2>
+{% endfor %}
+{% endblock %}
